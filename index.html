@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura/Google Gemini</title>
+</head>
+<body>
+    <header>
+        <h1>Quem são os Mergulhadores?</h1>
+        <h2>Instrutores e Instrutoras e Anunciantes da Alura nessa imersão</h2>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" id="campoPesquisa" placeholder=" Pesquise sebre os membros Alura">
+            <!-- Esse botão aqui vai trazer do as infos do banco de dados dados.js formatado pelo app.js dentro dessa section. -->
+            <button id="botao" onclick="buscar()" >Pesquisar</button>
+        </section>    
+        <section class="resultado-pesquisa" id="resultado-pesquisa">
+        </section>
+    </main>  
+    <footer>
+        <p>2024 - Lucas P. Kamegawa. Todos os direitos reservados.
+        Entre en contato lucaspireskamegawa@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>    
+    <script src="app.js"></script>
+
+</body>
+</html>

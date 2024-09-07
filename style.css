@@ -1,0 +1,187 @@
+/* Aqui é a estilização do scroll (acaba no "fim do srcoll") */
+.resultado-pesquisa::-webkit-scrollbar {
+   width: 5px;
+   margin: 0; 
+   padding: 0;
+}
+ 
+.resultado-pesquisa::-webkit-scrollbar-track {
+   background: rgba(255, 255, 255, 0);       
+}
+ 
+.resultado-pesquisa::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.334);    
+   border-radius: 20px;     
+}
+/* fim do srcoll */
+
+@keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+}
+ 
+body{
+   animation: fadeIn 0.5s ease-in-out;  
+   background-color: #152032; 
+   color: #f0f8ff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+   height: 100vh; 
+   margin: 0; 
+   padding: 0; 
+}
+
+header{
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+}
+
+h1{
+   font-size: 3rem;
+   margin: 0; 
+   padding: 0;
+   color: transparent; 
+   background: linear-gradient(to right, #96c9ff, #ef3dff); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.088);
+   text-align: center; 
+}
+
+h2{
+   font-size: 1.3rem;
+   margin: 0; 
+   padding: 0;
+}
+
+main{
+   display: flex;
+   flex-direction: column; 
+   padding: 1rem;
+}
+
+section{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section input{
+   border: none;
+   width:25rem;
+   margin: 1rem; 
+   padding: 1rem;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 16px;
+   transition: all 0.3s ease-in-out;
+}
+
+section input:focus{
+   outline: none;
+   margin: 1rem; 
+   padding: 1rem;
+   box-shadow: 0px 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+section button{
+   text-align: center;
+   font-size: 1rem;
+   margin: 0; 
+   padding: 0;   
+   color: #dcdcdc;
+   font-weight: 700;
+   background-color: #544fd1; 
+   border: none;
+   border-radius: 0.5cap;
+   width:10rem;
+   margin: 1rem; 
+   padding: 1rem;
+   cursor: pointer;
+   position: relative;
+}
+
+section button:hover{
+   transition: 0.3s;
+   text-align: center;
+   font-size: 1.1rem;
+   margin: 0; 
+   padding: 0;   
+   color: #dcdcdc;
+   font-weight: 700;
+   background: linear-gradient(to right, #55a7ff, #ef3dff); 
+   border: none;
+   border-radius: 0.5cap;
+   width:10rem;
+   margin: 1.1rem; 
+   padding: 1.1rem;
+   width: 35%;
+   cursor: pointer;
+}
+
+.resultado-pesquisa{ 
+   width: 96%;
+   height: 39vh;
+   overflow-y: auto; 
+   margin-top: 1rem; 
+   padding: 1rem; 
+   border-radius: 0.6rem;
+}
+
+.item-resultado {
+   background: #ffffff; 
+   border-radius: 0.6rem; 
+   padding: 1rem; 
+   margin-bottom: 1rem;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.767); 
+   width: 90%;
+}
+
+.item-resultado a:hover {
+   text-decoration: underline;
+   color: transparent; 
+   background: linear-gradient(to right, #55a7ff, #ef3dff); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-decoration: underline;
+}
+
+.item-resultado h3 {
+   font-size: 1.5rem; 
+   color: #222831; 
+}
+
+.item-resultado a {
+   text-decoration: none; 
+   color: #30475E;
+}
+
+.descricao-meta {
+   color: #45474B; 
+   margin: 0.5rem 0; 
+}
+
+footer{
+   background-color: #F5F7F8; 
+   color: #45474B;
+   text-align: center;
+   padding: 0; 
+   width: 100%; 
+   position: absolute; 
+   bottom: 0; 
+   font-size: 0.8rem; 
+}
+
+footer p{
+   width: 99%;
+}
